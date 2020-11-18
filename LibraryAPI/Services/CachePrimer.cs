@@ -15,6 +15,7 @@ namespace LibraryAPI.Services
         private readonly ILogger<CachePrimer> _logger;
         private readonly IDistributedCache _cache;
 
+        // For cache service
         public CachePrimer(IDistributedCache cache, ILogger<CachePrimer> logger)
         {
             _cache = cache;
